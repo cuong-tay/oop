@@ -25,15 +25,15 @@ public:
         arr = new int[n];
     } 
 
-    /* DayNguyen(const DayNguyen& other){
+    DayNguyen(const DayNguyen& other){
         this->n = other.n;
         arr = other.arr;
         for (int i = 0; i < n; ++i) {
             arr[i] = other.arr[i];
         }
-    } */
+    }
 
-    /* DayNguyen& operator=(const DayNguyen& other) {
+    DayNguyen& operator=(const DayNguyen& other) {
         if (this != &other) {
             delete[] arr;
             n = other.n;
@@ -43,7 +43,7 @@ public:
             }
         }
         return *this;
-    } */
+    } 
 
     ~DayNguyen() {
         delete[] arr;
