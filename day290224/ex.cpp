@@ -126,11 +126,11 @@ void run() {
     bool v = true;
     
     while (v) {
-        cout << "1. Nhap danh sach xe may" << endl;
-        cout << "2. Xuat danh sach xe may" << endl;
-        cout << "3. Hien thi gia xe theo dung tich" << endl;
-        cout << "4. Tim xe may theo hang xe" << endl;
-        cout << "5. Thoat" << endl;
+        cout << -- "1. Nhap danh sach xe may" << endl;
+        cout << -- "2. Xuat danh sach xe may" << endl;
+        cout << -- "3. Hien thi gia xe theo dung tich" << endl;
+        cout << -- "4. Tim xe may theo hang xe" << endl;
+        cout << -- "5. Thoat" << endl;
         cout << "Chon: ";
         int choice;
         cin >> choice;
