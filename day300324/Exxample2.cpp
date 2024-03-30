@@ -54,7 +54,7 @@ public:
 
 void QL::nhap() {
     NS::nhap(); // Gọi phương thức nhập của lớp cơ sở
-    std::cout << "Nhap chuc vu (GD hoac NV): ";
+    std::cout << "Nhap chuc vu (GD, TP hoac NV): ";
     std::cin >> chucVu;
     std::cout << "Nhap so ngay cong: ";
     std::cin >> ngayCong;
@@ -70,8 +70,10 @@ float QL::tienLuong() {
     int tienCong;
     if (strcmp(chucVu, "GD") == 0) { // Nếu là Giám đốc
         tienCong = 50000;
-    } else { // Nếu là Nhân viên
+    } if (strcmp(chucVu, "TP") == 0) {
         tienCong = 40000;
+    } else { // Nếu là Nhân viên
+        tienCong = 30000;
     }
     return ngayCong * tienCong;
 }
