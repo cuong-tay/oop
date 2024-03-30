@@ -70,7 +70,7 @@ float QL::tienLuong() {
     int tienCong;
     if (strcmp(chucVu, "GD") == 0) { // Nếu là Giám đốc
         tienCong = 50000;
-    } if (strcmp(chucVu, "TP") == 0) {
+    } else if (strcmp(chucVu, "TP") == 0) {
         tienCong = 40000;
     } else { // Nếu là Nhân viên
         tienCong = 30000;
